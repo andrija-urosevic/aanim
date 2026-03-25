@@ -16,7 +16,7 @@ class InsertionSort(Scene):
         
         rects = VGroup(
             *[VGroup(
-                Rectangle(width=0.5, height=a/2.0, color=BLUE, fill_opacity=0.2), 
+                Rectangle(width=0.5, height=a/2.0 + 0.5, color=BLUE, fill_opacity=0.2), 
                 Tex(f'{a}')
             ) for a in array]
         )
@@ -188,7 +188,7 @@ class SelectionSort(Scene):
 
         rects = VGroup(
             *[VGroup(
-                Rectangle(width=0.5, height=a/2.0, color=BLUE, fill_opacity=0.2), 
+                Rectangle(width=0.5, height=a/2.0 + 0.5, color=BLUE, fill_opacity=0.2), 
                 Tex(f'{a + 1}')
             ) for a in array]
         )
@@ -365,7 +365,7 @@ class BubbleSort(Scene):
         
         rects = VGroup(
             *[VGroup(
-                Rectangle(width=0.5, height=a/2.0, color=BLUE, fill_opacity=0.2), 
+                Rectangle(width=0.5, height=a/2.0 + 0.5, color=BLUE, fill_opacity=0.2), 
                 Tex(f'{a + 1}')
             ) for a in array]
         )
@@ -546,7 +546,7 @@ class MergeSort(Scene):
 
         array = VGroup(*[
             VGroup(
-                Rectangle(width=0.5, height=a/5.0 + 0.5, color=BLUE, fill_opacity=0.2), 
+                Rectangle(width=0.5, height=a/2.0 + 0.5, color=BLUE, fill_opacity=0.2), 
                 Tex(f'{a + 1}')
             ) for a in arr]
         )
